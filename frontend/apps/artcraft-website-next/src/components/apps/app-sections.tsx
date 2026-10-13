@@ -114,7 +114,11 @@ export function AppGallery({ app, index }: { app: CraftApp; index: string }) {
               rel="noopener noreferrer"
               className={twMerge(
                 "group relative block overflow-hidden bg-bg-sunken",
-                shot.portrait ? "aspect-[7/9]" : "aspect-[16/10]",
+                shot.portrait
+                  ? "aspect-[7/9]"
+                  : shot.wide
+                    ? "aspect-video"
+                    : "aspect-[16/10]",
               )}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
