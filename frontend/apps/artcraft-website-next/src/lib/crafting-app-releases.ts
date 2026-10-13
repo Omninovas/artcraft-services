@@ -222,10 +222,10 @@ export const CRAFT_APP_RELEASES: Record<CraftAppSlug, CraftRelease | null> = {
   effectcraft: craftRelease("0.8.0"),
   designcraft: craftRelease("0.6.0"),
   figcraft: craftRelease("0.5.1"),
+  loopcraft: null,
   wordcraft: craftRelease("0.5.0"),
   soundcraft: craftRelease("0.5.0"),
   deckcraft: craftRelease("0.5.0"),
   cadcraft: craftRelease("0.5.0"),
   gridcraft: craftRelease("0.5.0"),
-  loopcraft: null,
 };
